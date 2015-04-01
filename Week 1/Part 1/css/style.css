@@ -98,7 +98,7 @@ p{
     text-indent:4%;
 }
 
-article p:last-of-type{
+article p:last-of-type, article p:nth-of-type(3){
     padding-bottom:2%;
 }
 
@@ -191,7 +191,7 @@ img + p{
     }
 
     div.sideImages:nth-child(n+1) {
-        margin-right: 2em;
+        margin-right: 1em;
     }
 
     img + p{
@@ -216,10 +216,6 @@ img + p{
 
     .sideImages {
         float: left;
-    }
-
-    div.sideImages:nth-child(n+1) {
-        margin-right: .6em;
     }
 
     img + p{
@@ -264,10 +260,6 @@ img + p{
         margin:5px;
         text-align:center;
         padding-bottom:5px;
-    }
-
-    div.sideImages:nth-child(odd) {
-        margin-right: 3em;
     }
 }
 
