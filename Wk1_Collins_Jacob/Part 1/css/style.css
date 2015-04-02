@@ -166,6 +166,7 @@ aside{
 }
 
 img + p{
+    font-family: 'Special Elite', cursive;
     margin:1%;
     text-align:center;
     padding-bottom:1%;

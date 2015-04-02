@@ -1,0 +1,77 @@
+
+/*-------------------- Main Styling --------------------*/
+
+body{
+    background: url(../images/graveyard.jpg);
+}
+
+.container{
+    background-color:#ffffff;
+    max-width:100%;
+}
+
+h1{
+    font-family: 'IM Fell English SC', serif !important;
+
+}
+
+h2{
+    font-family: 'IM Fell English SC', serif !important;
+}
+
+h3{
+    font-family: 'IM Fell English SC', serif !important;
+}
+
+h4 + p{
+    font-size:1.5em;
+}
+/*-------------------- Navigation --------------------*/
+
+nav {
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+nav li {
+    font-family: 'IM Fell DW Pica', serif;
+    font-size:2em;
+    display: inline-block;
+    padding-top:1em;
+    padding-bottom: 2em;
+    padding-right:1.5%;
+}
+
+a:link {
+    color: #003000;
+    text-decoration: none;
+}
+
+a:visited {
+    color: #660066;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #FF3300;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+a:active {
+    color: #FF3300;
+    text-decoration: none;
+    cursor: pointer;
+}
+/*-------------------- Images --------------------*/
+
+img{
+    max-width: 100%;
+}
+
+.movieImages img{
+    max-width:95%;
+    padding-left:2%;
+
+}
