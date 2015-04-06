@@ -23,3 +23,18 @@
 .jumbotron a:hover{
     color:red;
 }
+
+.search{
+    padding-left:3%;
+}
+
+h2+img{
+    max-width:75%;
+}
+
+.book-wrapper{
+    background:darkslategrey;
+    color:#ffffff;
+    margin: 0 5%;
+    padding-bottom:2%;
+}
