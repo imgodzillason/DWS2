@@ -1,0 +1,25 @@
+/*Main Content*/
+
+.jumbotron{
+    background:url(../images/books.jpg) repeat-x;
+
+}
+
+.jumbotron h1{
+    color:#ffffff;
+    padding-left:3%;
+}
+
+.jumbotron p{
+    color:#ffffff;
+    padding-left:3%;
+}
+
+.jumbotron a{
+    color:#ffffff;
+    text-decoration:none;
+}
+
+.jumbotron a:hover{
+    color:red;
+}
