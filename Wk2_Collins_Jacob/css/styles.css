@@ -35,6 +35,93 @@ h2+img{
 .book-wrapper{
     background:darkslategrey;
     color:#ffffff;
-    margin: 0 5%;
+    text-align:center;
+    margin: 0 2%;
+    padding:2% 2%;
+}
+
+.browseButton{
+    margin-top: 3%;
+}
+
+h2 + p{
     padding-bottom:2%;
+}
+
+/*-------------------- Media Queries -------------------*/
+
+/* Tablets (landscape) ----------- */
+@media (max-width: 1024px) {
+    .jumbotron{
+        padding-bottom:5%;
+    }
+
+    .book-wrapper{
+        background:darkslategrey;
+        color:#ffffff;
+    }
+
+    h2 + p{
+        padding-bottom:2%;
+    }
+
+}
+
+/* Tablets (portrait) ----------- */
+@media (max-width: 820px) {
+    .jumbotron{
+        padding-bottom:5%;
+    }
+
+    .book-wrapper{
+        background:darkslategrey;
+        color:#ffffff;
+    }
+
+    h2 + p{
+        padding-bottom:2%;
+    }
+
+}
+
+/* Smartphones (landscape) ----------- */
+@media (max-width: 767px) {
+    .jumbotron{
+        padding-bottom:10%;
+    }
+
+    .book-wrapper{
+        background:darkslategrey;
+        color:#ffffff;
+
+    }
+
+    .search{
+        padding-left:0;
+    }
+
+    h2 + p{
+        padding-bottom:0;
+    }
+
+}
+
+/* Smartphones (portrait) ----------- */
+@media (max-width: 320px) {
+    .jumbotron{
+        padding-bottom:8%;
+    }
+
+    .book-wrapper{
+        background:darkslategrey;
+        color:#ffffff;
+    }
+
+    .search{
+        padding-left:0;
+    }
+
+    h2 + p{
+        padding-bottom:0%;
+    }
 }
