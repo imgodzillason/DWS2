@@ -50,6 +50,10 @@ h2 + p{
     padding-bottom:2%;
 }
 
+.signUp{
+    margin-left:10%;
+}
+
 /*-------------------- Media Queries -------------------*/
 
 /* Tablets (landscape) ----------- */
@@ -127,4 +131,6 @@ h2 + p{
     h2 + p{
         padding-bottom:0;
     }
+
+
 }
