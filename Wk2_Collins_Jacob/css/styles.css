@@ -51,12 +51,17 @@ h2 + p{
 }
 
 .signUp{
-    margin-left:10%;
+    padding-left:5%;
+}
+
+.comingSoon{
+    max-width:100%;
+    padding-left:8%;
 }
 
 .table, th{
     text-align:center;
-    max-width:100%;
+    max-width:90%;
 }
 
 /*-------------------- Media Queries -------------------*/
@@ -74,6 +79,11 @@ h2 + p{
 
     h2 + p{
         padding-bottom:2%;
+    }
+
+    .comingSoon{
+
+        min-height:100%;
     }
 
 }
