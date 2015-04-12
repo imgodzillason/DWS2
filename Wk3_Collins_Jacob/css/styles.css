@@ -1,0 +1,273 @@
+/*---Main Styles---*/
+
+html, body{
+    margin:0 auto;
+    width:98%;
+    background:#EFDEBE;
+}
+
+ul{
+    list-style-type:none;
+}
+
+li{
+    border:1px solid black;
+    border-top-left-radius:.5em;
+    border-top-right-radius: .5em;
+    background:black;
+    display:inline;
+    padding:1%;
+}
+
+li:hover{
+    background-color:#ff6633;
+}
+
+li a:visited{
+    color:white;
+}
+
+.logo{
+    background:black;
+    text-align:center;
+    padding:1%;
+    margin-top:-1%;
+    max-width:100%;
+}
+
+.logo img{
+    max-width:100%;
+}
+
+h1, h2,{
+    font-family: 'Maven Pro', sans-serif;
+}
+
+h1:first-of-type{
+    text-align:center;
+}
+
+fieldset{
+    border: 4px double #43413B;
+
+    color:#2F2C26;
+    margin-bottom:1%;
+    padding:1%;
+}
+
+#register{
+    float:left;
+}
+
+/*.about{
+    float:left;
+    clear:both;
+}*/
+
+#firstPara{
+    max-width:45%;
+    padding-right:1%;
+    padding-left:3%;
+    float:left;
+    clear:both;
+}
+
+#secondPara{
+    max-width:45%;
+    float:left;
+}
+
+form{
+    margin: 0 auto;
+}
+
+legend{
+    font-family: 'Maven Pro', sans-serif;
+    font-size:1.7em;
+    font-weight: 500;
+}
+
+.firstName,
+.middleInitial,
+.lastName,
+.dob,
+.phone,
+.phoneType,
+.email{
+    float:left;
+    padding:1%;
+    width:47%;
+    height:100%;
+}
+
+.address, .city, .zipcode{
+    float:left;
+    padding:1%;
+    width:47%;
+    height:100%;
+}
+
+.address2{
+    float:left;
+    padding:1%;
+    width:47%;
+}
+
+.state{
+    float:left;
+    padding:1%;
+    width:50%;
+    height:100%;
+}
+
+.bankName, .accountType{
+    float:left;
+    padding:1%;
+    width:47%;
+    height:100%;
+}
+
+.lengthOfTime{
+    float:left;
+    padding:1%;
+    width:50%;
+}
+
+button{
+    background-color:#000000;
+    color:white;
+    font-family: 'Maven Pro', sans-serif;
+    font-size:1.2em;
+    border-radius:1em;
+    margin: 1%;
+    padding:1%;
+    width:25%;
+}
+
+button:hover{
+    background:#353436;
+    color:#EBEBEB;
+}
+
+/*Media Queries*/
+
+@media (max-width: 400px){
+    .firstName,
+    .middleInitial,
+    .lastName,
+    .dob,
+    .phone,
+    .phoneType,
+    .email{
+        float:none;
+        padding:1%;
+        width:100%;
+        height:auto;
+    }
+
+    .address,
+    .address2,
+    .city,
+    .state,
+    .zipcode{
+        float:none;
+        padding:1%;
+        width:100%;
+        height:auto;
+    }
+
+    .bankName, .accountType, .lengthOfTime{
+        float:none;
+        padding:1%;
+        width:100%;
+        height:auto;
+    }
+
+    .logo{
+        max-width:100%;
+        margin-top:-2%;
+    }
+
+    #firstPara, #secondPara{
+        float:none;
+        max-width:100%;
+        padding:1%;
+    }
+
+    button{
+        padding:1.2%;
+    }
+
+
+
+}
+
+
+@media (max-width: 600px){
+    .firstName,
+    .middleInitial,
+    .lastName,
+    .dob,
+    .phone,
+    .phoneType,
+    .email{
+        float:none;
+        padding:1%;
+        width:100%;
+        height:auto;
+    }
+
+    .address,
+    .address2,
+    .city,
+    .state,
+    .zipcode{
+        float:none;
+        padding:1%;
+        width:100%;
+        height:auto;
+    }
+
+    .bankName, .accountType, .lengthOfTime{
+        float:none;
+        padding:1%;
+        width:100%;
+        height:auto;
+    }
+
+    li{
+        padding:2%;
+
+    }
+
+    .logo{
+        max-width:100%;
+        margin-top:-2%;
+    }
+
+    #firstPara, #secondPara{
+        float:none;
+        max-width:100%;
+        padding:1%;
+    }
+
+    button{
+        padding:1.2%;
+    }
+}
+
+@media (max-width: 1024px){
+
+    li{
+        padding-bottom:2%;
+    }
+
+    #firstPara, #secondPara{
+        padding:1%;
+    }
+
+    button{
+        width:20%;
+    }
+
+}
