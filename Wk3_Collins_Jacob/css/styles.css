@@ -6,8 +6,45 @@ html, body{
     background:#EFDEBE;
 }
 
+.logo{
+    background:black;
+    text-align:center;
+    padding:1%;
+    margin-top:-1.2%;
+    max-width:100%;
+}
+
+.logo img{
+    max-width:100%;
+}
+
+h1,
+h2{
+    font-family: 'Maven Pro', sans-serif;
+}
+
+h1:first-of-type{
+    text-align:center;
+}
+
+#firstPara{
+    max-width:45%;
+    padding-right:1%;
+    padding-left:3%;
+    float:left;
+    clear:both;
+}
+
+#secondPara{
+    max-width:45%;
+    float:left;
+}
+
+/*--Navigation---*/
+
 ul{
     list-style-type:none;
+    padding-top:1%;
 }
 
 li{
@@ -27,25 +64,7 @@ li a:visited{
     color:white;
 }
 
-.logo{
-    background:black;
-    text-align:center;
-    padding:1%;
-    margin-top:-1%;
-    max-width:100%;
-}
-
-.logo img{
-    max-width:100%;
-}
-
-h1, h2,{
-    font-family: 'Maven Pro', sans-serif;
-}
-
-h1:first-of-type{
-    text-align:center;
-}
+/*---Form Styles---*/
 
 fieldset{
     border: 4px double #43413B;
@@ -56,24 +75,6 @@ fieldset{
 }
 
 #register{
-    float:left;
-}
-
-/*.about{
-    float:left;
-    clear:both;
-}*/
-
-#firstPara{
-    max-width:45%;
-    padding-right:1%;
-    padding-left:3%;
-    float:left;
-    clear:both;
-}
-
-#secondPara{
-    max-width:45%;
     float:left;
 }
 
@@ -100,7 +101,10 @@ legend{
     height:100%;
 }
 
-.address, .city, .zipcode{
+.address,
+.city,
+.zipcode,
+.timeLived{
     float:left;
     padding:1%;
     width:47%;
@@ -120,7 +124,8 @@ legend{
     height:100%;
 }
 
-.bankName, .accountType{
+.bankName,
+.accountType{
     float:left;
     padding:1%;
     width:47%;
@@ -149,7 +154,7 @@ button:hover{
     color:#EBEBEB;
 }
 
-/*Media Queries*/
+/*---Media Queries---*/
 
 @media (max-width: 400px){
     .firstName,
@@ -176,7 +181,9 @@ button:hover{
         height:auto;
     }
 
-    .bankName, .accountType, .lengthOfTime{
+    .bankName,
+    .accountType,
+    .lengthOfTime{
         float:none;
         padding:1%;
         width:100%;
@@ -188,7 +195,8 @@ button:hover{
         margin-top:-2%;
     }
 
-    #firstPara, #secondPara{
+    #firstPara,
+    #secondPara{
         float:none;
         max-width:100%;
         padding:1%;
@@ -197,7 +205,6 @@ button:hover{
     button{
         padding:1.2%;
     }
-
 
 
 }
@@ -228,7 +235,9 @@ button:hover{
         height:auto;
     }
 
-    .bankName, .accountType, .lengthOfTime{
+    .bankName,
+    .accountType,
+    .lengthOfTime{
         float:none;
         padding:1%;
         width:100%;
@@ -236,8 +245,7 @@ button:hover{
     }
 
     li{
-        padding:2%;
-
+        padding:1.2%;
     }
 
     .logo{
@@ -245,7 +253,8 @@ button:hover{
         margin-top:-2%;
     }
 
-    #firstPara, #secondPara{
+    #firstPara,
+    #secondPara{
         float:none;
         max-width:100%;
         padding:1%;
@@ -262,7 +271,8 @@ button:hover{
         padding-bottom:2%;
     }
 
-    #firstPara, #secondPara{
+    #firstPara,
+    #secondPara{
         padding:1%;
     }
 
