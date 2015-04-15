@@ -91,13 +91,23 @@ th{
     padding-left:8%;
 }
 
+hr{
+    border:1px solid #2F4F4F;
+}
+
+footer{
+    text-align:center;
+    display:block;
+    padding:1%;
+}
+
 /*---Media Queries---*/
 
 /* Tablets (landscape) ----------- */
 @media (max-width: 1024px) {
 
     .book-wrapper{
-        background:darkslategrey;
+        background:#2F4F4F;
         color:#ffffff;
     }
 
