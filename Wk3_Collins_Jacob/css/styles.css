@@ -64,6 +64,10 @@ li a:visited{
     color:white;
 }
 
+a:link{
+    text-decoration:none;
+}
+
 /*---Form Styles---*/
 
 fieldset{
@@ -226,6 +230,7 @@ button:hover{
 
     .address,
     .address2,
+    .timeLived,
     .city,
     .state,
     .zipcode{
