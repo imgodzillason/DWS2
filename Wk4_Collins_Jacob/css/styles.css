@@ -54,7 +54,7 @@ table {
 /*-------------------- Main Styling --------------------*/
 
 body {
-    background: #000000 url(../images/dark-spade.png);
+    background: #000000 url(../images/wood-pattern.jpg);
     max-width: 90%;
     font-size: 1em;
     margin: 0 auto;
@@ -140,15 +140,34 @@ a:active {
 section {
     width: 95%;
     margin-right: 2%;
+    padding-bottom:1%;
+}
+
+.videoWrapper {
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9 */
+    padding-top: 25px;
+    height: 0;
+}
+.videoWrapper iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
 }
 
 img{
-    max-width:80%;
+    max-width:90%;
+}
+
+img:hover{
+    transform:scale(1.25) rotate(360deg);
+    transition: width 2s, height 2s, transform 2s;
 }
 
 .gallery{
-    column-count:3;
-    float:left;
+    padding-left:1.2%;
 }
 
 .column-one{
@@ -174,134 +193,99 @@ img{
 
 /* Tablets (landscape) ----------- */
 @media (max-width: 1024px) {
-    section {
-        float: none;
-        width: 60%;
-    }
-
-    aside {
-        float: left;
-        width: 100%;
-        text-align: right;
-    }
-
-    .sideImages {
-        float: left;
-    }
-
-    div.sideImages:nth-child(n+1) {
-        margin-right: 1em;
-    }
 
     img{
-        max-width:100%;
+        max-width:90%;
     }
 
-    img + p{
-        margin:1%;
-        text-align:center;
-        padding-bottom:1%;
+    .column-one{
+        float: left;
+        width: 33%;
     }
+
+    .column-two{
+        float: left;
+        width: 33%;
+    }
+
+    .column-three{
+        display: inline-block;
+        width: 33%;
+    }
+
 }
 
 /* Tablets (portrait) ----------- */
-@media (max-width: 820px) {
-    section {
-        float: none;
-        width: 100%;
-    }
-
-    aside {
-        float: none;
-        width: 100%;
-        text-align: right;
-    }
-
-    .sideImages {
-        float: left;
-    }
+@media (max-width: 725px) {
 
     img{
-        max-width:100%;
+        max-width:90%;
     }
 
-    img + p{
-        margin:1%;
-        text-align:center;
-        padding-bottom:1%;
+    .column-one{
+        float: left;
+        width: 33%;
     }
+
+    .column-two{
+        float: left;
+        width: 33%;
+    }
+
+    .column-three{
+        display: inline-block;
+        width: 33%;
+    }
+
 }
 
 /* Smartphones (landscape) ----------- */
-@media (max-width: 767px) {
-    h1 {
-        float: none;
-        font-size: 4.5em;
+@media (max-width: 450px) {
+
+    h1{
+        font-size:4em;
     }
 
-    nav {
-        float: none;
-        margin-top: 2%;
+    section{
+        padding-bottom:4%;
     }
 
-    nav li {
-        margin: 0 .9em 20px 0;
-    }
-
-    section {
+    .column-one{
         float: none;
         width: 100%;
-    }
-
-    aside {
-        float: none;
-        width: 100%;
-        text-align: right;
-    }
-
-    .sideImages {
-        float: left;
-    }
-
-    img{
-        max-width:100%;
-    }
-
-    img + p{
-        margin:5px;
         text-align:center;
         padding-bottom:1%;
     }
+
+    .column-two{
+        float: none;
+        width: 100%;
+        text-align:center;
+        padding-bottom:1%;
+    }
+
+    .column-three{
+        width: 100%;
+        text-align:center;
+        padding-bottom:1%;
+    }
+
 }
 
 /* Smartphones (portrait) ----------- */
 @media (max-width: 320px) {
-    h1 {
-        float: none;
-        font-size: 4.5em;
-    }
-
-    nav {
-        float: none;
-        margin-top: 2%;
-    }
-
-    nav li {
-        margin: 0 .9em 2% 0;
-    }
-
-    section {
-        float: none;
+    .column-one{
+        float: left;
         width: 100%;
     }
 
-    aside {
-        float: none;
+    .column-two{
+        float: left;
         width: 100%;
-        text-align: center;
     }
 
-    img{
-        max-width:100%;
+    .column-three{
+        display: inline-block;
+        width: 100%;
     }
 }
