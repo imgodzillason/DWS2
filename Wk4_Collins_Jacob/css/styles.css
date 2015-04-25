@@ -84,8 +84,12 @@ h1{
 h2 {
     font-family: 'Special Elite', cursive;
     color: #990000;
-    padding-bottom:2%;
-    padding-top:2%;
+    padding:2% 0;
+}
+
+h2:hover{
+    transform:skew(20deg, -2deg);
+    transition: transform 2s;
 }
 
 h1+h2{
@@ -110,9 +114,8 @@ nav {
 
 nav li {
     display: inline-block;
-    padding-top:1em;
-    padding-bottom: 2em;
-    padding-right:1.5%;
+    padding: 1em 1.5% 2em 0;
+
 }
 
 a:link {
@@ -139,14 +142,16 @@ a:active {
 
 section {
     width: 95%;
-    margin-right: 2%;
     padding-bottom:1%;
+}
+
+p~.videoWrapper{
+    margin:1% auto;
 }
 
 .videoWrapper {
     position: relative;
-    padding-bottom: 56.25%; /* 16:9 */
-    padding-top: 25px;
+    padding:25px 0 50% 0;
     height: 0;
 }
 .videoWrapper iframe {
@@ -194,6 +199,12 @@ img:hover{
 /* Tablets (landscape) ----------- */
 @media (max-width: 1024px) {
 
+    h2:hover{
+        transform:skew(0deg, 0deg);
+        transition: transform 0s;
+    }
+
+
     img{
         max-width:90%;
     }
@@ -218,6 +229,12 @@ img:hover{
 /* Tablets (portrait) ----------- */
 @media (max-width: 725px) {
 
+    h2:hover{
+        transform:skew(0deg, 0deg);
+        transition: transform 0s;
+    }
+
+
     img{
         max-width:90%;
     }
@@ -237,6 +254,11 @@ img:hover{
         width: 33%;
     }
 
+    img:hover{
+        transform:scale(1) rotate(0deg);
+        transition: width 0s, height 0s, transform 0s;
+    }
+
 }
 
 /* Smartphones (landscape) ----------- */
@@ -244,6 +266,11 @@ img:hover{
 
     h1{
         font-size:4em;
+    }
+
+    h2:hover{
+        transform:skew(0deg, 0deg);
+        transition: transform 0s;
     }
 
     section{
@@ -270,10 +297,21 @@ img:hover{
         padding-bottom:1%;
     }
 
+    img:hover{
+        transform:scale(1) rotate(0deg);
+        transition: width 0s, height 0s, transform 0s;
+    }
+
 }
 
 /* Smartphones (portrait) ----------- */
 @media (max-width: 320px) {
+
+    h2:hover{
+        transform:skew(0deg, 0deg);
+        transition: transform 0s;
+    }
+
     .column-one{
         float: left;
         width: 100%;
@@ -287,5 +325,10 @@ img:hover{
     .column-three{
         display: inline-block;
         width: 100%;
+    }
+
+    img:hover{
+        transform:scale(1) rotate(0deg);
+        transition: width 0s, height 0s, transform 0s;
     }
 }
