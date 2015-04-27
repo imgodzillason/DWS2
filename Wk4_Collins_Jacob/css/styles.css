@@ -63,9 +63,7 @@ body {
 #wrapper {
     background-color: #ffffff;
     width:91.666666666666%;
-    height: auto;
     margin: 0 auto;
-    padding-left: 2%;
     overflow: hidden;
 }
 
@@ -75,21 +73,20 @@ header{
 }
 
 h1{
-    font-family: 'Amatic SC', cursive;
-    font-size: 6em;
+    font-family: 'IM Fell DW Pica SC', serif;
+    font-size: 4.5em;
     text-align:center;
+    padding-top:1%;
 
 }
 
 h2 {
     font-family: 'Special Elite', cursive;
     color: #990000;
-    padding:2% 0;
+    padding:2% 0 2% 2%;
 }
 
 h2:hover{
-    transform:skew(20deg, -2deg);
-    transition: transform 2s;
 }
 
 h1+h2{
@@ -100,6 +97,7 @@ h1+h2{
 
 p{
     text-indent:4%;
+    padding-left:2%;
 }
 
 article p:last-of-type, article p:nth-of-type(3), article p:nth-of-type(4){
@@ -108,8 +106,8 @@ article p:last-of-type, article p:nth-of-type(3), article p:nth-of-type(4){
 
 nav {
     width: 100%;
-    margin: 0 auto;
     float:left;
+    padding-left:1%;
 }
 
 nav li {
@@ -132,6 +130,8 @@ a:hover {
     color: #FF3300;
     text-decoration: none;
     cursor: pointer;
+    transform:skew(-20deg, 0deg);
+    transition: 2s;
 }
 
 a:active {
@@ -156,6 +156,7 @@ p~.videoWrapper{
 }
 .videoWrapper iframe {
     position: absolute;
+    margin-left: 2%;
     top: 0;
     left: 0;
     width: 100%;
@@ -164,6 +165,7 @@ p~.videoWrapper{
 
 img{
     max-width:90%;
+    padding-bottom:2%;
 }
 
 img:hover{
@@ -172,7 +174,7 @@ img:hover{
 }
 
 .gallery{
-    padding-left:1.2%;
+    text-align:center;
 }
 
 .column-one{
@@ -264,6 +266,15 @@ img:hover{
 /* Smartphones (landscape) ----------- */
 @media (max-width: 450px) {
 
+    #wrapper{
+        padding:0;
+        text-align:center;
+    }
+
+    .videoWrapper iframe{
+        margin-left:2%;
+    }
+
     h1{
         font-size:4em;
     }
@@ -306,6 +317,11 @@ img:hover{
 
 /* Smartphones (portrait) ----------- */
 @media (max-width: 320px) {
+
+    #wrapper{
+        padding:0;
+        text-align:center;
+    }
 
     h2:hover{
         transform:skew(0deg, 0deg);
