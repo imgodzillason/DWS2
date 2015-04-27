@@ -131,7 +131,7 @@ a:hover {
     text-decoration: none;
     cursor: pointer;
     transform:skew(-20deg, 0deg);
-    transition: 2s;
+    transition: .5s;
 }
 
 a:active {
@@ -163,9 +163,34 @@ p~.videoWrapper{
     height: 100%;
 }
 
+.movie-names{
+    margin:0 auto;
+}
+
+th{
+    font-size:1.5em;
+}
+
+table, th, td {
+    border: 3px solid #990000;
+    background-color:#000000;
+    color:#ffffff;
+    border-collapse: collapse;
+    width:60%;
+}
+
+th, td {
+    padding: 1.5%;
+    text-align: center;
+}
+
+th:nth-child(n+1){
+    background-color:#990000;
+}
+
 img{
     max-width:90%;
-    padding-bottom:2%;
+    padding:10% 2% 0 0;
 }
 
 img:hover{
