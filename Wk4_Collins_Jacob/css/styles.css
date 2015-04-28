@@ -17,7 +17,7 @@ dl, dt, dd, ol, ul, li,
 fieldset, form, label, legend,
 table, caption, tbody, tfoot, thead, tr, th, td,
 article, aside, canvas, details, embed,
-figure, figcaption, footer, header, hgroup,
+figure, figcaption, footer, header,
 menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
     margin: 0;
@@ -30,7 +30,7 @@ time, mark, audio, video {
 
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure,
-footer, header, hgroup, menu, nav, section {
+footer, header, menu, nav, section {
     display: block;
 }
 body {
@@ -171,12 +171,16 @@ th{
     font-size:1.5em;
 }
 
+.movie-names{
+    float:left;
+}
+
 table, th, td {
     border: 3px solid #990000;
     background-color:#000000;
     color:#ffffff;
     border-collapse: collapse;
-    width:60%;
+    width:50%;
 }
 
 th, td {
@@ -220,6 +224,27 @@ img:hover{
 .clear {
     clear: both;
 }
+
+.register{
+    float:right;
+    width:30%;
+    margin-top:10%;
+    margin-right:10%;
+    max-width:100%;
+}
+
+fieldset{
+    border: 4px double #43413B;
+    color:#2F2C26;
+    margin-bottom:1%;
+    padding:1%;
+}
+
+form{
+    margin: 0 auto;
+}
+
+
 
 /*-------------------- Media Queries -------------------*/
 
@@ -286,6 +311,18 @@ img:hover{
         transition: width 0s, height 0s, transform 0s;
     }
 
+    .movie-names{
+        float:none;
+        margin:0 auto;
+        width:80%;
+    }
+
+    .register{
+        float:none
+    margin:0 auto;
+        width:80%;
+    }
+
 }
 
 /* Smartphones (landscape) ----------- */
@@ -338,6 +375,18 @@ img:hover{
         transition: width 0s, height 0s, transform 0s;
     }
 
+    .movie-names{
+        float:none;
+        margin:0 auto;
+        width:80%;
+    }
+
+    .register{
+        float:none
+        margin:0 auto;
+        width:80%;
+    }
+
 }
 
 /* Smartphones (portrait) ----------- */
@@ -371,5 +420,13 @@ img:hover{
     img:hover{
         transform:scale(1) rotate(0deg);
         transition: width 0s, height 0s, transform 0s;
+    }
+
+    .movie-names{
+        float:none;
+    }
+
+    .register{
+        float:none
     }
 }
