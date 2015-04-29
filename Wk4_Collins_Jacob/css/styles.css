@@ -69,24 +69,26 @@ body {
 
 header{
     font-family: 'Amatic SC', cursive;
-    color: #990000;
+    color: #FF9900;
+}
+
+.headerImage{
+    background:url(../images/vampire.png);
+    max-width:100%;
 }
 
 h1{
     font-family: 'IM Fell DW Pica SC', serif;
-    font-size: 4.5em;
+    font-size: 4em;
     text-align:center;
     padding-top:1%;
-
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 }
 
 h2 {
     font-family: 'Special Elite', cursive;
     color: #990000;
     padding:2% 0 2% 2%;
-}
-
-h2:hover{
 }
 
 h1+h2{
@@ -121,7 +123,7 @@ a:link {
     text-decoration: none;
 }
 
-a:visited {
+li:visited {
     color: #660066;
     text-decoration: none;
 }
@@ -149,17 +151,17 @@ a:active {
     padding: 1% 2%;
     border: 1px solid #a12727;
     border-radius: 20px;
-    background: #ff4a4a;
-    background: linear-gradient(to bottom, #ff4a4a, #992727);
+    background: #000066;
+    background: linear-gradient(to bottom, #000066, #992727);
     font: normal normal bold 20px georgia;
-    color: #000000;
+    color: #ffffff;
     text-decoration: none;
 }
 .button:hover,
 .button:focus {
     background: #ff5959;
     background: linear-gradient(to bottom, #ff5959, #b62f2f);
-    color: #000000;
+    color: #ffffff;
     text-decoration: none;
 }
 .button:active {
@@ -169,16 +171,13 @@ a:active {
 .button:after{
     display: inline-block;
     height: 24px;
-    width: 24px;
+    width: 2%;
     line-height: 24px;
-    margin: 0 -4px -6px 4px;
     position: relative;
     top: 0;
     left: 0;
     background-size: 100% 100%;
 }
-
-
 
 section {
     width: 95%;
@@ -265,21 +264,21 @@ img:hover{
     clear: both;
 }
 
+hr{
+    border:1px solid #000000;
+}
+
 .register{
-    width:30%;
-    max-width:100%;
+    max-width:80%;
     margin-left:2%;
 }
 
 fieldset{
     border: 4px double #43413B;
     color:#2F2C26;
+    float:left;
     margin-bottom:1%;
     padding:1%;
-}
-
-form{
-    margin: 0 auto;
 }
 
 
@@ -288,12 +287,6 @@ form{
 
 /* Tablets (landscape) ----------- */
 @media (max-width: 1024px) {
-
-    h2:hover{
-        transform:skew(0deg, 0deg);
-        transition: transform 0s;
-    }
-
 
     img{
         max-width:90%;
@@ -318,11 +311,6 @@ form{
 
 /* Tablets (portrait) ----------- */
 @media (max-width: 725px) {
-
-    h2:hover{
-        transform:skew(0deg, 0deg);
-        transition: transform 0s;
-    }
 
     img{
         max-width:90%;
@@ -359,6 +347,10 @@ form{
 /* Smartphones (landscape) ----------- */
 @media (max-width: 450px) {
 
+    h2:last-of-type{
+        float:left;
+    }
+
     #wrapper{
         padding:0;
         text-align:center;
@@ -370,11 +362,6 @@ form{
 
     h1{
         font-size:4em;
-    }
-
-    h2:hover{
-        transform:skew(0deg, 0deg);
-        transition: transform 0s;
     }
 
     section{
@@ -412,6 +399,15 @@ form{
         width:80%;
     }
 
+    .register{
+        text-align:left
+    }
+
+    fieldset{
+        max-width:80%;
+        margin:0 auto;
+    }
+
 }
 
 /* Smartphones (portrait) ----------- */
@@ -420,11 +416,6 @@ form{
     #wrapper{
         padding:0;
         text-align:center;
-    }
-
-    h2:hover{
-        transform:skew(0deg, 0deg);
-        transition: transform 0s;
     }
 
     .column-one{
