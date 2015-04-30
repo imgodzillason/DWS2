@@ -74,7 +74,7 @@ header{
 
 .headerImage{
     background:url(../images/vampire.png);
-    max-width:100%;
+    max-width:100%; /*leave so background image shows up when screen shrinks*/
 }
 
 h1{
@@ -165,6 +165,7 @@ a:active {
     font: normal bold 20px georgia;
     color: #ffffff;
     text-decoration: none;
+    cursor:pointer;
 }
 .button:hover,
 .button:focus {
