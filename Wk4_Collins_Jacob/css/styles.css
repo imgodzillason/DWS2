@@ -51,7 +51,7 @@ table {
     border-spacing: 0;
 }
 
-/*-------------------- Main Styling --------------------*/
+/*--------Main Styling--------*/
 
 body {
     background: #000000 url(../images/wood-pattern.jpg);
@@ -78,8 +78,8 @@ header{
 }
 
 h1{
-    font-family: 'IM Fell DW Pica SC', serif;
-    font-size: 4em;
+    font-family: 'Uncial Antiqua', cursive;
+    font-size: 3.5em;
     text-align:center;
     padding-top:1%;
     text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
@@ -105,6 +105,13 @@ p{
 article p:last-of-type, article p:nth-of-type(3), article p:nth-of-type(4){
     padding-bottom:2%;
 }
+
+section {
+    width: 95%;
+    padding-bottom:1%;
+}
+
+/*--------Navigation--------*/
 
 nav {
     width: 100%;
@@ -142,6 +149,8 @@ a:active {
     cursor: pointer;
 }
 
+/*--------Button--------*/
+
 .button {
     float:right;
     display: inline-block;
@@ -153,14 +162,14 @@ a:active {
     border-radius: 20px;
     background: #000066;
     background: linear-gradient(to bottom, #000066, #992727);
-    font: normal normal bold 20px georgia;
+    font: normal bold 20px georgia;
     color: #ffffff;
     text-decoration: none;
 }
 .button:hover,
 .button:focus {
     background: #ff5959;
-    background: linear-gradient(to bottom, #ff5959, #b62f2f);
+    background: linear-gradient(to bottom, #992727, #000066);
     color: #ffffff;
     text-decoration: none;
 }
@@ -170,19 +179,13 @@ a:active {
 }
 .button:after{
     display: inline-block;
-    height: 24px;
+    height: 3%;
     width: 2%;
-    line-height: 24px;
-    position: relative;
-    top: 0;
-    left: 0;
-    background-size: 100% 100%;
+    line-height: 3%;
 }
 
-section {
-    width: 95%;
-    padding-bottom:1%;
-}
+/*--------Video--------*/
+
 
 p~.videoWrapper{
     margin:1% auto;
@@ -190,7 +193,7 @@ p~.videoWrapper{
 
 .videoWrapper {
     position: relative;
-    padding:25px 0 50% 0;
+    padding:3% 0 50% 0;
     height: 0;
 }
 .videoWrapper iframe {
@@ -201,6 +204,9 @@ p~.videoWrapper{
     width: 100%;
     height: 100%;
 }
+
+/*--------Table--------*/
+
 
 .movie-names{
     margin:0 auto;
@@ -223,6 +229,9 @@ th, td {
     text-align: center;
 }
 
+/*--------Sign Up Form--------*/
+
+
 .firstName, .lastName, .email{
     padding-bottom:2%;
 }
@@ -230,6 +239,25 @@ th, td {
 th:nth-child(n+1){
     background-color:#990000;
 }
+
+hr{
+    border:1px solid #000000;
+}
+
+.register{
+    max-width:80%;
+    margin-left:2%;
+}
+
+fieldset{
+    border: 4px double #43413B;
+    color:#2F2C26;
+    float:left;
+    margin-bottom:1%;
+    padding:1%;
+}
+
+/*--------Images--------*/
 
 img{
     max-width:90%;
@@ -260,32 +288,14 @@ img:hover{
     width: 33%;
 }
 
+/*--------Clear Floats--------*/
+
 .clear {
     clear: both;
 }
 
-hr{
-    border:1px solid #000000;
-}
-
-.register{
-    max-width:80%;
-    margin-left:2%;
-}
-
-fieldset{
-    border: 4px double #43413B;
-    color:#2F2C26;
-    float:left;
-    margin-bottom:1%;
-    padding:1%;
-}
-
-
-
 /*-------------------- Media Queries -------------------*/
 
-/* Tablets (landscape) ----------- */
 @media (max-width: 1024px) {
 
     img{
@@ -309,7 +319,6 @@ fieldset{
 
 }
 
-/* Tablets (portrait) ----------- */
 @media (max-width: 725px) {
 
     img{
@@ -344,8 +353,11 @@ fieldset{
 
 }
 
-/* Smartphones (landscape) ----------- */
 @media (max-width: 450px) {
+
+    .button{
+        visibility: hidden;
+    }
 
     h2:last-of-type{
         float:left;
@@ -410,8 +422,11 @@ fieldset{
 
 }
 
-/* Smartphones (portrait) ----------- */
 @media (max-width: 320px) {
+    
+    .button{
+        visibility: hidden;
+    }
 
     #wrapper{
         padding:0;
